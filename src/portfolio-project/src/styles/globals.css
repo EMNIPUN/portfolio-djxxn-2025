@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-gray-200;
+}
+
+a {
+  @apply text-blue-400 hover:text-blue-300;
+}
+
+button {
+  @apply bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.footer {
+  @apply bg-gray-800 text-gray-400 py-4 text-center;
+}
+
+.header {
+  @apply bg-gray-800 text-gray-200 py-4;
+}
+
+.section {
+  @apply py-16 px-4;
+}
+
+.section-title {
+  @apply text-4xl font-bold mb-8;
+}
+
+.section-content {
+  @apply text-lg;
+}
