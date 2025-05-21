@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Button } from "@/components/ui/button";
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon,  Terminal } from "lucide-react";
 
 
 function NavBar() {
@@ -20,7 +20,7 @@ function NavBar() {
 
   return (
     <div>
-                <motion.header 
+            <motion.header 
             className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md py-3' : 'bg-transparent py-5'}`}
             initial={{ y: -100 }}
             animate={{ y: 0 }}
@@ -28,10 +28,11 @@ function NavBar() {
         >
             <div className="container mx-auto flex justify-between items-center px-4">
             <motion.div 
-                className="text-xl font-bold"
-                whileHover={{ scale: 1.05 }}
+              className="flex items-center gap-2 text-shadow-gray-900 dark:text-gray-300 font-bold text-xl"
+              whileHover={{ scale: 1.05 }}
             >
-                DJXXN
+              <Terminal className="h-6 w-6 text-primary" />
+              <span>djxn</span>
             </motion.div>
 
             <div className="flex items-center gap-6">
